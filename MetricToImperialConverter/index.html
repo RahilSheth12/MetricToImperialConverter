@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <main class="main">
+        <div id="light"></div>
+        <div id="dark"></div>
+        <body>
+            <div class="float">
+            <header>Metric/Imperial unit conversion</header>
+            </div>
+            <h1 id="value1">
+                <input type="number" min="0" max="100" id="input-num" class="input-num" style="border:3px double">
+            </h1>
+            <div class="title">
+                <p id="covt">Length (Meter/Feet)</p>
+                <p id="covt1">Volume (Liters/Gallons)</p>
+                <p id="covt2">Mass (Kilograms/Pounds)</p>
+            </div>
+            <div class="meterToFeet">
+            <p class="nums">
+                <span id="mtf"></span> meters = <span id="mtfv" onload="mtf()"></span> 
+            </p>
+            </div>
+            <div class="litersToGallons">
+            <p class="nums1">
+                <span id="ltg"></span> liters = <span id="ltgv" onload="ltg()"></span> 
+            </p>
+            </div>
+            <div class="kilosToPounds">
+            <p class="nums2">
+                <span id="ktp"></span> kilos = <span id="ktpv" onload="ktp()"></span> 
+            </p>
+            </div>
+            <script src="index.js"></script>
+        </body>
+        
+    </main>
+</html>
